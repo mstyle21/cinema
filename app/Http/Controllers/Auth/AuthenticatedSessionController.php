@@ -8,6 +8,10 @@ use App\Providers\RouteServiceProvider;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
+/**
+ * Class AuthenticatedSessionController
+ * @package App\Http\Controllers\Auth
+ */
 class AuthenticatedSessionController extends Controller
 {
     /**
