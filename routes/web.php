@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Frontend\HomeController;
+use App\Http\Controllers\Frontend\MovieController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,9 +15,9 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'list'])->name('home');
+Route::get('/movie/{id}', [MovieController::class, 'details'])->name('movie');
+Route::post('/movie/search', [MovieController::class, 'search'])->name('movie-search');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
