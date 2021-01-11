@@ -31460,6 +31460,10 @@ select {
   background-color: red;
 }
 
+.movie {
+  padding: 2em;
+}
+
 .page-title { padding: 20px;
 }
 

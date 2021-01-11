@@ -2,5 +2,6 @@
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
 @import "movie.css";
+@import 'main.css';
 
 .page-title { padding: 20px; }
