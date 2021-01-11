@@ -15,7 +15,7 @@
                                         <span class="p-8"><a href="/movie/{{ $movie->id }}">{{ $movie->name }}</a></span>
                                         <span class="d-block m-8">{{ $movie->description }}</span>
                                         <span class="d-block m-8">Cast: {{ $movie->actors }}</span>
-                                        <button type="button" class="btn btn-primary d-block m-8">Detalii</button>
+                                        <button type="button" class="btn btn-primary d-block m-8"><a href="/movie/{{ $movie->id }}">Detalii</a></button>
                                     </div>
                                 </div>
                         @endforeach

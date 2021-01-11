@@ -31464,6 +31464,9 @@ select {
   padding: 2em;
 }
 
+button a { text-decoration: none; color: white;
+}
+
 .page-title { padding: 20px;
 }
 

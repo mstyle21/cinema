@@ -10,7 +10,7 @@
                         <h2 class="p-8">{{ $movie->name }}</h2>
                         <span class="d-block m-8">{{ $movie->description }}</span>
                         <span class="d-block m-8">Cast: {{ $movie->actors }}</span>
-                        <button type="button" class="btn btn-primary d-block m-8">Rezerva!</button>
+                        <button type="button" class="btn btn-primary d-block m-8"><a href="/movie/reservation/{{ $movie->id }}">Rezerva!</a></button>
                     </div>
                 </div>
             </div>
