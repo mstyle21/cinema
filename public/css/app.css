@@ -31425,6 +31425,41 @@ select {
           animation: bounce 1s infinite;
 }
 
+.room-displacement {
+  display: flex;
+  justify-content: center;
+}
+
+.user-form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.seat-details {
+  margin: 10px;
+}
+
+.seat-name {
+  padding: 20px;
+}
+
+.seat-name[type="checkbox"] {
+  border: none;
+  vertical-align: unset;
+  background-color: transparent;
+}
+
+.seat-name:hover { cursor: pointer;
+}
+
+.seat-empty {
+  background-color: green;
+}
+
+.seat-reserved {
+  background-color: red;
+}
+
 .page-title { padding: 20px;
 }
 

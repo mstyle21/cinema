@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [HomeController::class, 'list'])->name('home');
 Route::get('/movie/{id}', [MovieController::class, 'details'])->name('movie');
 Route::post('/movie/search', [MovieController::class, 'search'])->name('movie-search');
+Route::get('/movie/reservation/{id}', [MovieController::class, 'reservation'])->name('movie-reservation');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

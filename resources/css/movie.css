@@ -1,0 +1,26 @@
+.room-displacement {
+    display: flex;
+    justify-content: center;
+}
+.user-form {
+    display: flex;
+    justify-content: space-around;
+}
+.seat-details {
+    margin: 10px;
+}
+.seat-name {
+    padding: 20px;
+}
+.seat-name[type="checkbox"] {
+    border: none;
+    vertical-align: unset;
+    background-color: transparent;
+}
+.seat-name:hover { cursor: pointer; }
+.seat-empty {
+    background-color: green;
+}
+.seat-reserved {
+    background-color: red;
+}
