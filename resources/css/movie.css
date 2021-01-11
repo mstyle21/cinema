@@ -8,18 +8,26 @@
 }
 .seat-details {
     margin: 10px;
+    text-align: center;
 }
+.seat-details p { margin: 0; }
+.seat-details input[type="checkbox"] { display: none; }
+p.seat-name { padding: 24px; }
 .seat-name {
     padding: 20px;
+    text-align: center;
 }
 .seat-name[type="checkbox"] {
     border: none;
     vertical-align: unset;
     background-color: transparent;
 }
-.seat-name:hover { cursor: pointer; }
+.seat-details.seat-empty:hover label { cursor: pointer; }
 .seat-empty {
     background-color: green;
+}
+.seat-empty input[type="checkbox"]:checked ~ label {
+    background-color: blue;
 }
 .seat-reserved {
     background-color: red;

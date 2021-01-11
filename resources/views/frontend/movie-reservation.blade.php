@@ -40,8 +40,8 @@
                                                 </div>
                                             @else
                                                 <div class="seat-details seat-empty">
-                                                    <label for="">{{ $seat->seat_number }}</label>
-                                                    <input type="checkbox" name="selectedSeats" class="seat-name" value="{{ $seat->id }}">
+                                                    <label for="seat_{{ $seat->seatId }}" class="seat-name">{{ $seat->seat_number }}</label>
+                                                    <input type="checkbox" name="selectedSeats" id="seat_{{ $seat->seatId }}" value="{{ $seat->seatId }}">
                                                 </div>
                                             @endif
                                         </td>

@@ -50,7 +50,7 @@ class MovieController extends Controller
             return redirect('/');
         }
         $roomId = 1;
-        $roomSeats = RoomSeat::select()
+        $roomSeats = RoomSeat::select(['room_seats.id as seatId', 'room_seats.*', 'seat_statuses.*'])
             ->leftJoin('seat_statuses', 'room_seats.id', '=', 'seat_statuses.room_seat_id')
             ->where('room_id', 'like', $roomId)
             ->get();
