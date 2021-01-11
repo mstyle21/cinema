@@ -1,5 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import 'main.css';
 
 .page-title { padding: 20px; }
